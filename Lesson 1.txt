@@ -1,0 +1,86 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Using the FC and diff commands in the command prompt and git bash, respectively,
+made finding the bug quick, because the exact lines where the differences occured
+were shown to me to compare. At point, it was merely comparing the lines word-for-word,
+or character-for-character, if needed, to find the bug, which ended up being a typo.
+
+Regarding the FC and diff commands:
+I prefer the diff command a bit more, because it shows me the whole file,
+so I can not only see the changes, but I can put the changes into context.
+Some changes, like a typo, won't require context, but other changes,
+like a variable name, may require context to know the correct name of the variable.
+For example, if I changed from using the variable name "results" to "result" on
+accident, then it would be easier to see that if I saw the rest of the code where
+the variable declaration would be, especially if I have two variables that have
+similar names (on accident, I'd hope).
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+The most notable reason I can think of is if, during the course of adding or changing code,
+a part of the code is broken and no longer works. Having access to the old version can allow
+for a quick comparison to see what changed, and how that change may have affected the overall
+program to cause it to break. It would be much easier to copy-and-paste code from a past version
+to a current version, then to recreate it.
+
+Also, if code was changed for efficiency reasons, and that new code works, but cause indirect issues
+with another part of the program code, then dropping back to the old version till a fix
+can be made is great for applications that are currently being used by yourself or others.
+It's like rolling back a GPU driver, if that driver caused a game to crash. Who wouldn't roll it back,
+then update later once a fix has come out? Version control is great for allowing quick fixes.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros:
+- Can control when to save, such as after finishing a small function, during coding, rather than saving
+during the middle of the function. 
+- The commit messages make it easier to track changes that may have had undesirable affects on the code.
+
+Cons:
+- May forget to commit during more intense coding sessions, thus leading to larger commits.
+- Auto-saves may happen in the middle of a section of code, so it would leave you with partial code.
+- Too many saves may be created with auto-saves, so it may be troublesome to track the changes
+- The auto-saves won't have a commit message, so we would have to use 'diff' or 'FC' to see the changes,
+then compare those changes to ultimately figure out what was done to the code.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+
+Git is specifically made for coding, so it would make sense for it to cater to the needs
+of a coder, and the files coders use. Making changes to one file may affect another file,
+so giving the coder the opportunity to use respositories allows for tracking those changes
+more easily, and save time if a problem arises from one of the changes.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+The command 'git log' will show the history of the commits with each commit
+having a commit ID, author, date, and message. The 'git diff' command will
+compare two ccmmits and show the changes, additions and subtractions. The
+history is much easier to see if we comare commits that were made back-to-back,
+so there are less changes to view, and if the messages attached to each commit
+are descriptive, so we can easily understand what changes were made without
+having to read through as much code.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+With version control, breaking something isn't a problem when we have access to previous
+versions of code that worked. Plus, if we break something while trying something
+new, then we can compare the broken code to the last good code,
+and possibly figure out a way to make the broken code work. It sounds much easier
+than trying to start from scratch when a new function doesn't work as intended.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'm just here to learn abut Git and GitHub. I haven't thought a lot about
+what I'll use Git for other than when using GitHub. I have seen jobs listed
+on GitHub for Technical Support, so I've considered applying for that if I 
+feel confident in my abilities to do it. I imagine it'll take a little more time
+after this class to be confident, but I'm hoping this class will help
+springboard me to learning more about GitHub.
