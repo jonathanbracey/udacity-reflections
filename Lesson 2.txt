@@ -1,0 +1,25 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Git places a .git subdirectory in the current directory
+where it will store the commit history (commit ID, author,
+date, message) and code for each commit. For the time being,
+after initializing a new repository, nothing is stored in the
+.git subdirectory, because there are no commits (even if
+there were files in the directory that 'git init' was run).
+
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers? 
+
+The staging area groups together the file or files that you want to commit. 
+The working directory actually holds the current copies of the files.
+The repository holds the commits, which has a copy of the file at the time
+the commit was made.
+
+The staging area is useful, because it allows us to choose what to commit,
+then check it with 'git status' before actually finalizing it. Without the
+staging area, we could accidentally make a commit we didn't want, or we would
+be unable to commit multiple files at once (if the logical changes made sense
+to include in one commit). The staging area gives us more choice.
+
+
