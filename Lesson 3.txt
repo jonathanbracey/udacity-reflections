@@ -1,0 +1,19 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+It would most want to use remote repositories when collaborationg with others, so people
+can work on code together, and merge it more easily. This could work well for a
+collaboration between friends, or working with people online for a big project. In fact,
+I could see remote repositories on GitHub being useful for finding coding opportunities,
+because we can collaborate on projects with people we don't know (at least,
+don't know yet). It could be a great way to garner experience, and learn a lot
+from veteran coders. 
+It could also be great for showing off code to others, so they can test it, and
+give their impressions (likes, dislikes, bugs found, new features). As new 
+features are created, new branches can be made till that feature is bug-free, and 
+working as intended. This type of public coding could allow others with the 
+knowledge and desire to potentially jump in, make some changes (additions,
+optimizations, etc.), and present them to original coder. All that could lead
+to the original coder learning something from a veteran coder (as seen above).
+
+Working with, and learning from, others seems to be the biggest positives for me.
+I suppose it make sense for teaching others to be added, too.
