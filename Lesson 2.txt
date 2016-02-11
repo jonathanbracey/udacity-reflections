@@ -23,3 +23,57 @@ be unable to commit multiple files at once (if the logical changes made sense
 to include in one commit). The staging area gives us more choice.
 
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using the 'git diff' command, we can compare the files in the working directory,
+and the staging area, so we can see which changes were made to the files
+before we use 'git commit' to commit the changes.
+
+
+What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+
+Branches would help to keep history organized when trying to code two different
+versions of the same project, such as a main version, and a version in a different
+language. This would allow both versions to be created side-by-side without
+affecting each other till a main merge is done (if you want both versions together).
+
+
+How do the diagrams help you visualize the branch structure?
+
+It shows the commits in order, and by branches, which shows us the
+parental structure of the commits. It is helpful to see where certain 
+branches started, or separated from the master branch. 
+The 'git log --graph --oneline <branch1> <branch2>' command is a great help 
+in comparing two branches. The diagram isn't as needed, for me, with that command,
+but I can see how quickly it could have become confusing if there were more than 
+two branches to compare. The diagram of the two branches helped to solidify the 
+use of branches before it became too complex (too many branches).
+
+
+What is the result of merging two branches together? 
+Why do we represent it in the diagram the way we do?
+
+The changes between the two branches, from when the original split happened
+to the final commit on each branch, are combined into one file. The commits
+from both branches are combined into one branch, and listed by time stamp,
+so the commits won't necessarily follow their parent. 
+We represent it in the diagram the way we do, because we want to show that
+the commit histories from both branches are intact. Git still keeps the 
+information regarding the parents, and allows the user to use the
+'git show <commit ID>' to check for changes between a commit and its parent.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Auto merging saves time when the code is fairly similar with different 
+parts being worked on at the same time. If different parts are worked on, 
+then there shouldn't be many conflicts during the merge. Manual merging,
+though, will require more time to put the code together, and to check
+the sections of code for differences, which can be tedious, time consuming, 
+and the changes can be easy to miss. 
+Manually merging is useful for conflicts, though, because we can pick and choose
+which parts of the code we need, don't need, or need to rewrite. Sometimes
+the code is so similar it is quite easy to fix a conflict, but it's best for
+us to do it, rather git, because we wouldn't want to try to figure out what
+went wrong with our code if git started deleting what it thought wasn't needed.
