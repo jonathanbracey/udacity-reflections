@@ -74,3 +74,15 @@ then I would fork it to my GitHub account and work on it there.
 I would mostly use branches when I want to work on a new feature separately from
 my main code, so I don't introduce new bugs to my 'good' code, or anytime I want
 to try something different without affecting what I have already completed.
+
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+If Git has the copy of the last known state of the remote, then we can 
+use 'git status' to check to see if we have any local commits that have
+yet to be pushed. If we do have local commits that need to be pushed,
+then we can check to see if there are any new commits remotely, so we'll
+have an idea as to whether or not we have have to do some merging.
+Depending on the time, I may not want to start merging files, and would 
+rather leave it till after lunch, after a meeting, the next day, etc.
