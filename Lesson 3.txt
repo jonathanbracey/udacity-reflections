@@ -33,3 +33,21 @@ save my file? I have a commit with A and B, a commit with A, B, and D, and commi
 A, B, and C. Would I have to merge those last two? I may have to try that out sometime
 with an unimportant file (add a commit online, pull it in while I already have the 
 file open locally, then make a commit locally).
+
+Update: I gave this a try. I created a file locally, and pushed it to GitHub.
+Next, I made a commit on GitHub after adding a little bit of text. Then, I opened 
+the local file, added a section, saved it, and closed it. Then I tried to pull the 
+file from GitHub, but (a good 'but'!) I received the following error:
+-----
+error: Your local changes to the following files would be overwritten by merge:
+        Commit1.txt
+Please, commit your changes or stash them before you can merge.
+Aborting
+-----
+Great! Now I have just used 'git add' and 'git commit' to my file. I tried to 
+use 'git pull' again, and now I have a merge conflict. Perfect. I thought I would
+have to merge them, so this makes sense. I resolved the conflict, the did the
+normal ('git add' , 'git commit' , 'git push origin master'). Now both files,
+remotely and locally, are the same. 
+Auto-pulling could lead to merge conflicts, and that's why we don't want it.
+Good to know!
