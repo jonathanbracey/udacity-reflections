@@ -46,7 +46,7 @@ Aborting
 -----
 Great! Now I have just used 'git add' and 'git commit' to my file. I tried to 
 use 'git pull' again, and now I have a merge conflict. Perfect. I thought I would
-have to merge them, so this makes sense. I resolved the conflict, the did the
+have to merge them, so this makes sense. I resolved the conflict, then did the
 normal ('git add' , 'git commit' , 'git push origin master'). Now both files,
 remotely and locally, are the same. 
 Auto-pulling could lead to merge conflicts, and that's why we don't want it.
