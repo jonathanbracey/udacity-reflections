@@ -51,3 +51,26 @@ normal ('git add' , 'git commit' , 'git push origin master'). Now both files,
 remotely and locally, are the same. 
 Auto-pulling could lead to merge conflicts, and that's why we don't want it.
 Good to know!
+
+
+Describe the differences between forks, clones, and branches.
+When would you use one instead of another?
+
+Clones are when a repository is copied, from a remote or local drive,
+to your computer.
+Forks are a GitHub feature that copies a repository from another user to
+yourself. Changes made to it do not affect the other user. A link back to
+the original user's GitHub is present, which is a nice way of giving credit.
+Branches are splits in a commit line where the same code goes two different
+paths, but at one time shared the same commit line before the split.
+I would use clone when I want to work on a repository on my computer that is
+present on a remote drive. If I want to do any changes to it on my computer, 
+and not have any plans to push it onto GitHub, then I would clone it. I can 
+always push it to GitHub at a later date if I'm happy with my work, want to share
+it with others, or want to collaborate on it.
+I would use fork if I want to do separate work on someone else's GitHub repository
+that I don't have access to, and I want to keep it on GitHub. If that is the case,
+then I would fork it to my GitHub account and work on it there.
+I would mostly use branches when I want to work on a new feature separately from
+my main code, so I don't introduce new bugs to my 'good' code, or anytime I want
+to try something different without affecting what I have already completed.
