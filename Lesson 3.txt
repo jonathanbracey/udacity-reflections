@@ -7,6 +7,7 @@ I could see remote repositories on GitHub being useful for finding coding opport
 because we can collaborate on projects with people we don't know (at least,
 don't know yet). It could be a great way to garner experience, and learn a lot
 from veteran coders. 
+
 It could also be great for showing off code to others, so they can test it, and
 give their impressions (likes, dislikes, bugs found, new features). As new 
 features are created, new branches can be made till that feature is bug-free, and 
@@ -17,3 +18,18 @@ to the original coder learning something from a veteran coder (as seen above).
 
 Working with, and learning from, others seems to be the biggest positives for me.
 I suppose it make sense for teaching others to be added, too.
+
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+
+If we're working on a file, then we wouldn't want Git to try to pull changes
+another person has made before we're done working on our part of the file.
+I'm not entirely sure what would happen if Git pulled in a newly change file 
+that I am already working on. What would happen to the commits? If I have a file
+with sections A, B, and C in it, but a newly pulled version of that file is dropped
+into my working directory with sections A, B, and D in it, then what happens when I
+save my file? I have a commit with A and B, a commit with A, B, and D, and commit with
+A, B, and C. Would I have to merge those last two? I may have to try that out sometime
+with an unimportant file (add a commit online, pull it in while I already have the 
+file open locally, then make a commit locally).
