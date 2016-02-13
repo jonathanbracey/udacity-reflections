@@ -110,3 +110,20 @@ Some of this is typical collaboration, with or without Git and GitHub, like
 deciding who works on which parts of the code or adds which features, but the manual 
 merging is the more difficult and time-consuming part. Git and GitHub would definitely 
 make collaboration easier, in my opinion.
+
+
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+
+Off the top of my head, I'd use separate branches to make changes that could "break" 
+the master branch code, or that hasn't been discussed amongst others in a 
+collaborative environment. If I'm going to add a new feature, or something big,
+then I'm going to use a separate branch, especially when others are involved on
+the project. If I haven't even discussed an addition amongst others, then I would
+want to use a separate branch, so they can see how the changes affect the project
+before agreeing, disagreeing, or giving their input. 
+Using a separate branch to make changes definitely has the major advantage of
+keeping the master branch working, clean, bug free, etc. If the master branch
+is always intact like that, then we'll always have something to show off without
+having to expalin away different bugs or broken features. This allows us to have a
+demonstration-ready product.
