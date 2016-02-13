@@ -86,3 +86,27 @@ then we can check to see if there are any new commits remotely, so we'll
 have an idea as to whether or not we have have to do some merging.
 Depending on the time, I may not want to start merging files, and would 
 rather leave it till after lunch, after a meeting, the next day, etc.
+
+
+How would you collaborate without using Git or GitHub? 
+What would be easier, and what would be harder?
+
+Firstly, the group would have to determine who works on which pieces of
+code, so when we try to put it together we will, hopefully, have less
+sections of code that was changed by more than one person. I we all work
+on creating new features, then it would be best, but otherwise we would have
+to keep in contact to make sure we're not working on the same section.
+Secondly, we'd have to come up with a way of sending code to the others. That
+coud be done through e-mail, drop box, Google drive, etc. However, once the code
+is sent, then we need one person to manually merge it, and that could be a
+difficult job if we didn't communicate well enough during the coding process.
+One section would be merged at a time with the main code (under a different
+name, if I was doing it), then bug checked before adding it to the main code (the
+master branch, as Git would call it). It would be a tedious process for one
+person to undertake, even if all the code worked, since adding in each section
+one at a time, testing it, merging it into the main code, etc. Once it is together, 
+and distributed to everyone else, then we would have to start all over.
+Some of this is typical collaboration, with or without Git and GitHub, like
+deciding who works on which parts of the code or adds which features, but the manual 
+merging is the more difficult and time-consuming part. Git and GitHub would definitely 
+make collaboration easier, in my opinion.
